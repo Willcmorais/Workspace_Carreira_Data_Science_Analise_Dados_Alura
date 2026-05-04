@@ -3,3 +3,8 @@
 
 nomes = ["joão", "MaRia", "JOSÉ"]
 sobrenomes = ["SILVA", "souza", "Tavares"]
+
+nome_completo = list(map(lambda x, y: (x + " " + y).title(), nomes, sobrenomes))
+
+for nome in nome_completo:
+    print(f"Nome completo: {nome}")
